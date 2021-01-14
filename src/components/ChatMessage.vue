@@ -1,14 +1,14 @@
 <template>
   <div class="chat-message">
-    <div class="info">{{ name + " " + datetime }}</div>
+    <div class="info">{{ username + " " + time }}</div>
     <slot></slot>
   </div>
 </template>
 
 <script>
 export default {
-  name: Message,
-  props: ["personName", "personDateTime"],
+  name: ChatMessage,
+  props: ["username", "time"],
 };
 </script>
 
